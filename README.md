@@ -80,18 +80,8 @@ AI-Code-Review-Assistant/
 
 ## How It Works
 
-flowchart TD
-    A[Developer / HTTP Client] --> B[Spring Boot REST API]
-    B --> C[Review Service]
-    C --> D[Generate Code Embedding]
-    D --> E[MongoDB Atlas Vector Search]
-    E --> F[Relevant Review Patterns]
-    F --> G[OpenAI Chat Model via Spring AI]
-    G --> H[Structured Review Findings]
-    C --> I[(MongoDB Collections)]
-    H --> I
-    I --> J[Review History API]
-    I --> K[Analytics API]
+<img width="822" height="1996" alt="mermaid-diagram" src="https://github.com/user-attachments/assets/9d51869b-c30c-43dd-b859-794eec94141e" />
+
 
     
 ## Example usage
