@@ -51,6 +51,19 @@ mvn spring-boot:run
 
 The `DataSeeder` loads about 20 Java anti-patterns with embeddings on first startup.
 
+## Repo Structure
+
+AI-Code-Review-Assistant/
+├── src/
+│   └── main/
+│       ├── java/                 # Application source code
+│       └── resources/
+│           └── application.properties
+├── pom.xml                       # Maven dependencies and build configuration
+├── README.md
+└── .gitignore                    # Recommended: exclude build output and local secrets
+
+
 ## API endpoints
 
 | Method | Endpoint                              | Description                        |
@@ -65,6 +78,22 @@ The `DataSeeder` loads about 20 Java anti-patterns with embeddings on first star
 | GET    | `/api/analytics/severity`             | Finding counts by severity         |
 | GET    | `/api/analytics/top-patterns`         | Most frequently triggered patterns |
 
+## How It Works
+
+flowchart TD
+    A[Developer / HTTP Client] --> B[Spring Boot REST API]
+    B --> C[Review Service]
+    C --> D[Generate Code Embedding]
+    D --> E[MongoDB Atlas Vector Search]
+    E --> F[Relevant Review Patterns]
+    F --> G[OpenAI Chat Model via Spring AI]
+    G --> H[Structured Review Findings]
+    C --> I[(MongoDB Collections)]
+    H --> I
+    I --> J[Review History API]
+    I --> K[Analytics API]
+
+    
 ## Example usage
 
 Submit code for review:
