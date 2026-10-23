@@ -12,6 +12,17 @@ The application maintains a collection of code review patterns, retrieves releva
 
 This project demonstrates practical concepts in backend development, REST API design, AI integration, vector databases, and data persistence.
 
+## ✨ Key Features
+
+- AI-Assisted Code Review: Submit source-code snippets for analysis through a REST API.
+- Semantic Pattern Retrieval: Use vector embeddings and MongoDB Atlas Vector Search to find relevant review patterns.
+- Review Pattern Management: Create, retrieve, and filter stored review patterns through API endpoints.
+- Review History: Retrieve previously submitted reviews using their submission identifiers.
+- Finding Retrieval: Access findings associated with a particular review.
+- Review Analytics: Retrieve category statistics, severity statistics, and frequently triggered patterns.
+- Spring Boot Backend: Organize application functionality through REST APIs.
+- AI Service Integration: Connect Java backend logic with the configured AI provider.
+
 ## Prerequisites
 
 - Java Development Kit (JDK) 21 or later
