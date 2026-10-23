@@ -55,6 +55,7 @@ The `DataSeeder` loads about 20 Java anti-patterns with embeddings on first star
 
 AI-Code-Review-Assistant/
 ├── src/
+
 │   └── main/
 │       ├── java/                 # Application source code
 │       └── resources/
