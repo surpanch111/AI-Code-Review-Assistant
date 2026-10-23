@@ -1,4 +1,4 @@
-# AI-Powered Code Review Assistant
+# 🤖AI-Powered Code Review Assistant
 
 Companion project for the article "AI-Powered Code Review Assistant: Automated Code Analysis with Spring AI and MongoDB".
 
@@ -14,48 +14,16 @@ This project demonstrates practical concepts in backend development, REST API de
 
 ## Prerequisites
 
-🛠️ Tech Stack
-
-Technology
-
-Purpose
-
-Java 21
-
-Core application development
-
-Spring Boot 3.4.4
-
-Backend framework and REST APIs
-
-Spring AI 1.0.0
-
-Integration with AI models and embeddings
-
-OpenAI API
-
-AI-assisted analysis and embedding generation, as configured
-
-MongoDB Atlas
-
-Data persistence
-
-MongoDB Atlas Vector Search
-
-Semantic retrieval of review patterns
-
-Maven
-
-Dependency management and build automation
-
-REST APIs
-
-Communication between clients and backend services
+- Java Development Kit (JDK) 21 or later
+- Apache Maven 3.9 or later
+- MongoDB Atlas account and cluster
+- MongoDB Atlas Vector Search
+- OpenAI API key
+- Git
 
 ## Setup
 
 1. Clone the repository and navigate to the project directory.
-
 2. Set environment variables:
 
 ```bash
@@ -96,19 +64,39 @@ The `DataSeeder` loads about 20 Java anti-patterns with embeddings on first star
 
 ## Repo Structure
 
-AI-Code-Review-Assistant/
-├── src/
+## 📂 Project Structure
 
+```text
+AI-Code-Review-Assistant/
+│
+├── src/
 │   └── main/
-│       ├── java/                 # Application source code
+│       ├── java/
+│       │   └── # Application source code
+│       │
 │       └── resources/
 │           └── application.properties
-├── pom.xml                       # Maven dependencies and build configuration
+│
+├── pom.xml
 ├── README.md
-└── .gitignore                    # Recommended: exclude build output and local secrets
+└── .gitignore
+```
+
+### 📁 Directory Overview
+
+| File / Directory | Description |
+|---|---|
+| `src/main/java/` | Contains the Java source code, including the application's backend components. |
+| `src/main/resources/` | Contains application resources and configuration files. |
+| `application.properties` | Configures application settings, database connectivity, and other properties. |
+| `pom.xml` | Defines Maven dependencies, project metadata, and build configuration. |
+| `README.md` | Documents the project, setup instructions, features, and API endpoints. |
+| `.gitignore` | Specifies files and directories that Git should exclude, such as build output and local secrets. |
 
 
-## API endpoints
+
+
+## 📡API endpoints
 
 | Method | Endpoint                              | Description                        |
 |--------|---------------------------------------|------------------------------------|
@@ -122,13 +110,28 @@ AI-Code-Review-Assistant/
 | GET    | `/api/analytics/severity`             | Finding counts by severity         |
 | GET    | `/api/analytics/top-patterns`         | Most frequently triggered patterns |
 
-## How It Works
+## 🔄How It Works
 
 <img width="822" height="1996" alt="mermaid-diagram" src="https://github.com/user-attachments/assets/9d51869b-c30c-43dd-b859-794eec94141e" />
 
+## ▶️ Running the Application
 
-    
-## Example usage
+From the project root, build the application using Maven:
+
+mvn clean package
+
+Start the application:
+
+mvn spring-boot:run
+
+The default local base URL is expected to be:
+
+http://localhost:8080
+
+If the application uses a different configured port, use that port instead.
+
+The project documentation describes an initial collection of Java review patterns. Verify the application logs and database to confirm successful initialization.  
+## 💻Example usage
 
 Submit code for review:
 
@@ -140,12 +143,10 @@ curl -X POST http://localhost:8080/api/reviews \
     "language": "java"
   }'
 ```
-## Author
+## 👨‍💻 Author
 
-Anil Sharma
-
-GitHub: @surpanch111
-
+Anil Sharma  
+GitHub: @surpanch111  
 Project: AI-Code-Review-Assistant
 
 ⭐ If you find this project useful, consider giving the repository a star and sharing feedback through GitHub Issues.
