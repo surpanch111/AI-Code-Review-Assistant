@@ -96,3 +96,12 @@ curl -X POST http://localhost:8080/api/reviews \
     "language": "java"
   }'
 ```
+## Author
+
+Anil Sharma
+
+GitHub: @surpanch111
+
+Project: AI-Code-Review-Assistant
+
+⭐ If you find this project useful, consider giving the repository a star and sharing feedback through GitHub Issues.
