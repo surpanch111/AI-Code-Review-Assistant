@@ -1,6 +1,16 @@
 # AI-Powered Code Review Assistant
 
-Companion project for the article "AI-Powered Code Review Assistant: Automated Code Analysis with Spring AI and MongoDB" published on [Foojay](https://foojay.io/).
+Companion project for the article "AI-Powered Code Review Assistant: Automated Code Analysis with Spring AI and MongoDB".
+
+📌 Overview
+
+Code reviews are an essential part of software development, but manually identifying recurring anti-patterns and potential maintainability issues can be time-consuming.
+
+The AI-Powered Code Review Assistant explores an AI-assisted approach to code analysis by combining Spring Boot REST APIs, AI model integration, and MongoDB Atlas Vector Search.
+
+The application maintains a collection of code review patterns, retrieves relevant patterns through semantic similarity search, and provides endpoints for submitting code reviews, retrieving historical results, and accessing review analytics.
+
+This project demonstrates practical concepts in backend development, REST API design, AI integration, vector databases, and data persistence.
 
 ## Prerequisites
 
