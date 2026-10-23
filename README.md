@@ -2,7 +2,7 @@
 
 Companion project for the article "AI-Powered Code Review Assistant: Automated Code Analysis with Spring AI and MongoDB".
 
-📌 Overview
+## 📌 Overview
 
 Code reviews are an essential part of software development, but manually identifying recurring anti-patterns and potential maintainability issues can be time-consuming.
 
@@ -14,10 +14,43 @@ This project demonstrates practical concepts in backend development, REST API de
 
 ## Prerequisites
 
-- Java 21 or later
-- Maven 3.9+
-- A MongoDB Atlas cluster with Atlas Vector Search enabled
-- An OpenAI API key
+🛠️ Tech Stack
+
+Technology
+
+Purpose
+
+Java 21
+
+Core application development
+
+Spring Boot 3.4.4
+
+Backend framework and REST APIs
+
+Spring AI 1.0.0
+
+Integration with AI models and embeddings
+
+OpenAI API
+
+AI-assisted analysis and embedding generation, as configured
+
+MongoDB Atlas
+
+Data persistence
+
+MongoDB Atlas Vector Search
+
+Semantic retrieval of review patterns
+
+Maven
+
+Dependency management and build automation
+
+REST APIs
+
+Communication between clients and backend services
 
 ## Setup
 
