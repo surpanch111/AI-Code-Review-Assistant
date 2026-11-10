@@ -161,7 +161,6 @@ curl -X POST http://localhost:8080/api/reviews \
 
 - 🐙 **GitHub**: [@surpanch111](https://github.com/surpanch111)
 - 💼 **LinkedIn**: [Your LinkedIn Profile](https://www.linkedin.com/in/anil-pancholi01)
-- 🌐 **Portfolio**: [Your Portfolio Website]
 - 📧 **Email**: [surpanch111@gmail.com]
   
  Project: AI-Code-Review-Assistant
